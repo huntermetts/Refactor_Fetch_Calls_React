@@ -47,51 +47,36 @@ export default class ApplicationViews extends Component {
     }
 
 
-    // Delete animal fetch call
-    deleteAnimal = id => {
-        return fetch(`http://localhost:5002/animals/${id}`, {
-            method: "DELETE"
-        })
-        .then(e => e.json())
-        .then(() => fetch(`http://localhost:5002/animals`))
-        .then(e => e.json())
+    // Delete animal (uses module in AmimalManager)
+    deleteAnimal = (id) => {
+        return AnimalManager.removeAndList(id)
         .then(animals => this.setState({
             animals: animals
-        })
-      )
-    }
+          })
+        )
+      }
 
-    // Delete employee fetch call
-    deleteEmployee = id => {
-        return fetch(`http://localhost:5002/employees/${id}`, {
-            method: "DELETE"
-        })
-        .then(e => e.json())
-        .then(() => fetch(`http://localhost:5002/employees`))
-        .then(e => e.json())
+    // Delete employee (uses module in EmployeeManager)
+    deleteEmployee = (id) => {
+        return EmployeeManager.removeAndList(id)
         .then(employees => this.setState({
-            employees:employees
-        })
-      )
-    }
+            employees: employees
+          })
+        )
+      }
 
-    deleteOwner = id => {
-        return fetch(`http://localhost:5002/owners/${id}`, {
-            method: "DELETE"
-        })
-        .then(e => e.json())
-        .then(() => fetch(`http://localhost:5002/owners`))
-        .then(e => e.json())
+    deleteOwner = (id) => {
+        return OwnerManager.removeAndList(id)
         .then(owners => this.setState({
-            owners:owners
-        })
-      )
-    }
+            owners: owners
+          })
+        )
+      }
 
 
 
 
-
+    // Rendering to DOM
     render() {
         return (
             <React.Fragment>

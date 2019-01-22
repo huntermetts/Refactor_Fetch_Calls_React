@@ -5,23 +5,27 @@
       "name": "Doopdie Due"
     },
     {
-        "id": 7,
-        "name": "Nick Nicki"
-      },
-      {
-        "id": 8,
-        "name": "Snoope Dog"
-      },
-      {
-        "id": 9,
-        "name": "BucketMan"
-      }
+      "id": 7,
+      "name": "Snoope Dog"
+    },
+    {
+      "id": 8,
+      "name": "BucketMan"
+    },
+    {
+      "id": 9,
+      "name": "J_lumpy"
+    },
+    {
+      "id": 10,
+      "name": "Big_Baby"
+    },
+    {
+      "id": 11,
+      "name": "Marte"
+    }
   ],
   "animals": [
-    {
-      "id": 6,
-      "name": "Checkers"
-    },
     {
       "id": 7,
       "name": "Lucy"
@@ -32,7 +36,15 @@
     },
     {
       "id": 9,
-      "name": "BowWow"
+      "name": "Woopie Cushion"
+    },
+    {
+      "id": 8,
+      "name": "C-Breezy"
+    },
+    {
+      "id": 9,
+      "name": "Lil Pump"
     }
   ],
   "locations": [
@@ -49,10 +61,6 @@
     {
       "id": 2,
       "name": "Hunter"
-    },
-    {
-      "id": 3,
-      "name": "Nick"
     },
     {
       "id": 5,
